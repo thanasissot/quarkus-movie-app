@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  postgresAuth:
+    container_name: auth-db
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/apps/postgres:/data/db
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=auth
+
+  postgresRest:
+    container_name: rest-db
+    image: postgres:14-alpine
+    ports:
+      - 5433:5432
+    volumes:
+      - ~/apps/postgres:/data/db
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=rest
