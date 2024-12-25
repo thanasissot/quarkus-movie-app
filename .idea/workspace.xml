@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958f88c9-6705-47fb-9970-03e9c920858e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/ExampleResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/MyEntity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/client/SecurityRestClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/ActorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/ActorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/AppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/AppUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AppUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AppUserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/resources/privateKey.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AuthUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/WatchedMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/MoviesUserHasViewed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/ActorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/ActorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AppUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +51,8 @@
     "Docker.docker.postgres: Compose Deployment.executor": "Run",
     "Docker.docker: Compose Deployment.executor": "Run",
     "JavaScript Debug.Angular Application (frontend).executor": "Run",
+    "Maven.parent [clean,install,-DskipTests,-pl...].executor": "Run",
+    "Maven.parent [clean,install,-DskipTests].executor": "Run",
     "Maven.rest [clean,install,-DskipTests].executor": "Run",
     "Maven.security [clean,install,-DskipTests].executor": "Run",
     "Maven.security [exec:java...].executor": "Run",
@@ -99,16 +95,18 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sot.at.rest.mapper" />
+      <recent name="com.sot.at.rest.dto" />
       <recent name="com.sot.at.rest.resource" />
       <recent name="com.sot.at.rest.repo" />
       <recent name="com.sot.at.rest" />
-      <recent name="com.sot.ath.security.dto" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn exec:java -Dexec.mainClass=GenerateToken -Dexec.classpathScope=test -Dsmallrye.jwt.sign.key.location=privateKey.pem" />
       <command value="mvn clean install -DskipTests" />
+      <command value="mvn clean install -DskipTests -pl &quot;rest&quot;" />
     </option>
   </component>
   <component name="RunDashboard">

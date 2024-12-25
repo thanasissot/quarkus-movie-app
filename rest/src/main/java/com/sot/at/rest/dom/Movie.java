@@ -25,4 +25,5 @@ public class Movie extends PanacheEntityBase {
     @JsonIgnore
     @ManyToMany(mappedBy = "movies", targetEntity = Actor.class)
     private Set<Actor> actors = new HashSet<>();
+
 }

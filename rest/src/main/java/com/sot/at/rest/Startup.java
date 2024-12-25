@@ -3,6 +3,7 @@ package com.sot.at.rest;
 import com.sot.at.rest.dom.Actor;
 import com.sot.at.rest.dom.AuthUser;
 import com.sot.at.rest.dom.Movie;
+import com.sot.at.rest.dom.MoviesUserHasViewed;
 import com.sot.at.rest.repo.AppUserRepository;
 import com.sot.at.rest.repo.MovieRepository;
 import io.quarkus.runtime.StartupEvent;
@@ -76,6 +77,11 @@ public class Startup {
 
         // Persist the second actor
         actor1.persist();
+
+        MoviesUserHasViewed moviesUserHasViewed = new MoviesUserHasViewed();
+        moviesUserHasViewed.setAuthUser(authUser);
+        moviesUserHasViewed.setMovie(movie);
+        moviesUserHasViewed.persist();
 
     }
 }

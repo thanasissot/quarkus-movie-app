@@ -1,13 +1,18 @@
 package com.sot.at.rest.dom;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import lombok.Data;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Data
+import java.util.HashSet;
+import java.util.Set;
+
+@Getter
+@Setter
 @Entity
-public class AuthUser {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AuthUser extends PanacheEntityBase {
 
     @Id
     @GeneratedValue
@@ -15,5 +20,7 @@ public class AuthUser {
 
     private String username;
 
+    @OneToMany(mappedBy = "authUser", cascade = CascadeType.ALL)
+    private Set<MoviesUserHasViewed> viewedMovies = new HashSet<>();
 
 }
