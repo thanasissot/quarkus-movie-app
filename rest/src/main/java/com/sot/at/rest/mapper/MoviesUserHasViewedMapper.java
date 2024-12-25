@@ -9,7 +9,6 @@ import org.mapstruct.MappingConstants;
 @Mapper(componentModel = MappingConstants.ComponentModel.JAKARTA_CDI)
 public interface MoviesUserHasViewedMapper {
 
-    @Mapping(target = "authUserId", source = "moviesUserHasViewed.authUser.id")
     @Mapping(target = "movieId", source = "moviesUserHasViewed.movie.id")
     MoviesUserHasViewedDto toDTO(MoviesUserHasViewed moviesUserHasViewed);
 

@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958f88c9-6705-47fb-9970-03e9c920858e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpClient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/WatchedMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/MoviesUserHasViewed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/ActorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/ActorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AppUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/MoviesUserHasViewedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/MoviesUserHasViewedDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/AuthUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/AuthUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/MoviesUserHasViewedMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/MoviesUserHasViewedMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -415,6 +413,11 @@
           <url>jar://$MAVEN_REPOSITORY$/io/smallrye/smallrye-jwt-build/4.6.1/smallrye-jwt-build-4.6.1.jar!/io/smallrye/jwt/build/impl/JwtClaimsBuilderImpl.class</url>
           <line>208</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
