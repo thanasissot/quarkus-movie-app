@@ -1,8 +1,6 @@
 package com.sot.at.rest.repo;
 
 import com.sot.at.rest.dom.Actor;
-import com.sot.at.rest.dom.AppUser;
-import com.sot.at.rest.dom.Movie;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;

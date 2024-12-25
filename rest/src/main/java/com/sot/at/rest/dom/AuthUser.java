@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class AppUser {
+public class AuthUser {
 
     @Id
     @GeneratedValue

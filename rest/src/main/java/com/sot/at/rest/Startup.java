@@ -1,7 +1,7 @@
 package com.sot.at.rest;
 
 import com.sot.at.rest.dom.Actor;
-import com.sot.at.rest.dom.AppUser;
+import com.sot.at.rest.dom.AuthUser;
 import com.sot.at.rest.dom.Movie;
 import com.sot.at.rest.repo.AppUserRepository;
 import com.sot.at.rest.repo.MovieRepository;
@@ -30,10 +30,10 @@ public class Startup {
 
     @Transactional
     public void loadUsers(@Observes StartupEvent evt) {
-        AppUser appUser = new AppUser();
-        appUser.setUsername("user");
+        AuthUser authUser = new AuthUser();
+        authUser.setUsername("user");
 
-        appUserRepository.createAppUser(appUser);
+        appUserRepository.createAppUser(authUser);
 
         Movie movie = new Movie();
         movie.setTitle("Movie 1");

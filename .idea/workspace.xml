@@ -5,52 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958f88c9-6705-47fb-9970-03e9c920858e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/client/SecurityRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/ActorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/UserIsAuthenticated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/ActorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/MovieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AppUserResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/docker/Dockerfile.jvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/docker/Dockerfile.legacy-jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/docker/Dockerfile.native" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/docker/Dockerfile.native-micro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/docker/scripts/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/docker/scripts/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/Startup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/dom/AuthRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/dom/AuthUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/dto/UserIsAuthenticated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/repo/AuthRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/repo/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/resource/AuthResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/resource/TokenSecuredResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/resources/privateKey.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/resources/publicKey.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/test/java/GenerateToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/test/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/test/resources/privateKey.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/ExampleResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/MyEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/client/SecurityRestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/AuthUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/ActorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/ActorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/AppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/AppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AppUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AppUserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthResource.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/privateKey.pem" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +65,8 @@
     "Quarkus.rest.executor": "Debug",
     "Quarkus.security.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Rebasing master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "temurin-21",
     "kotlin-language-version-configured": "true",
@@ -446,11 +417,6 @@
           <url>jar://$MAVEN_REPOSITORY$/io/smallrye/smallrye-jwt-build/4.6.1/smallrye-jwt-build-4.6.1.jar!/io/smallrye/jwt/build/impl/JwtClaimsBuilderImpl.class</url>
           <line>208</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthResource.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
