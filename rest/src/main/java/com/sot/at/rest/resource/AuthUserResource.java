@@ -3,11 +3,12 @@ package com.sot.at.rest.resource;
 import com.sot.at.rest.dom.AuthUser;
 import com.sot.at.rest.dto.AuthUserDto;
 import com.sot.at.rest.mapper.AuthUserMapper;
-import com.sot.at.rest.repo.AppUserRepository;
-import jakarta.annotation.security.PermitAll;
 import jakarta.annotation.security.RolesAllowed;
 import jakarta.inject.Inject;
-import jakarta.ws.rs.*;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
@@ -22,9 +23,6 @@ public class AuthUserResource {
 
     @Inject
     JsonWebToken jwt;
-
-    @Inject
-    AppUserRepository appUserRepository;
 
     @Inject
     AuthUserMapper authUserMapper;
@@ -42,13 +40,6 @@ public class AuthUserResource {
     public AuthUserDto getAuthUserByUserName(AuthUserDto authUserDto) {
         AuthUser authUser = AuthUser.find("username", authUserDto.getUsername()).firstResult();
         return authUserMapper.toDTO(authUser);
-    }
-
-    @GET
-    @PermitAll
-    @Produces(MediaType.APPLICATION_JSON)
-    public AuthUser getUser(@Context SecurityContext ctx) {
-        return appUserRepository.findByUsername("user");
     }
 
     @GET

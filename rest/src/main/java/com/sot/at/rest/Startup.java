@@ -4,11 +4,8 @@ import com.sot.at.rest.dom.Actor;
 import com.sot.at.rest.dom.AuthUser;
 import com.sot.at.rest.dom.Movie;
 import com.sot.at.rest.dom.MoviesUserHasViewed;
-import com.sot.at.rest.repo.AppUserRepository;
-import com.sot.at.rest.repo.MovieRepository;
 import io.quarkus.runtime.StartupEvent;
 import jakarta.enterprise.event.Observes;
-import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -20,12 +17,6 @@ import java.util.HashSet;
 @Singleton
 public class Startup {
 
-    @Inject
-    AppUserRepository appUserRepository;
-
-    @Inject
-    MovieRepository movieRepository;
-
     @PersistenceContext
     EntityManager em;
 
@@ -33,8 +24,7 @@ public class Startup {
     public void loadUsers(@Observes StartupEvent evt) {
         AuthUser authUser = new AuthUser();
         authUser.setUsername("user");
-
-        appUserRepository.createAppUser(authUser);
+        authUser.persist();
 
         Movie movie = new Movie();
         movie.setTitle("Movie 1");
@@ -81,7 +71,14 @@ public class Startup {
         MoviesUserHasViewed moviesUserHasViewed = new MoviesUserHasViewed();
         moviesUserHasViewed.setAuthUser(authUser);
         moviesUserHasViewed.setMovie(movie);
+        moviesUserHasViewed.setViewed(true);
         moviesUserHasViewed.persist();
+
+        MoviesUserHasViewed moviesUserHasViewed2 = new MoviesUserHasViewed();
+        moviesUserHasViewed2.setAuthUser(authUser);
+        moviesUserHasViewed2.setMovie(movie2);
+        moviesUserHasViewed2.setWatchList(true);
+        moviesUserHasViewed2.persist();
 
     }
 }

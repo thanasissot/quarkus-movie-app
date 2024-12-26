@@ -5,8 +5,8 @@ import lombok.Data;
 
 @Data
 @Builder
-public class MoviesUserHasViewedDto {
-    private Long id;
+public class AddViewedMovieDto {
+    private Long actorId;
     private Long movieId;
     private boolean viewed;
     private boolean watchlist;

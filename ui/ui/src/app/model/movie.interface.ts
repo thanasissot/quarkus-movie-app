@@ -3,4 +3,6 @@ export interface Movie {
   title: string;
   releaseYear: string;
   viewed: boolean;
+  watchlist: boolean;
+  movieViewedId: number;
 }

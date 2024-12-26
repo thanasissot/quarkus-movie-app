@@ -2,9 +2,9 @@
   <table mat-table [dataSource]="movies" class="mat-elevation-z8">
 
     <!-- ID Column -->
-    <ng-container matColumnDef="id">
+    <ng-container matColumnDef="id"  >
       <th mat-header-cell *matHeaderCellDef> ID </th>
-      <td mat-cell *matCellDef="let movie"> {{movie.id}} </td>
+      <td mat-cell *matCellDef="let movie" (click)="selectMovie(movie)" class="clickable"> {{movie.id}} </td>
     </ng-container>
 
     <!-- Title Column -->
@@ -27,6 +27,24 @@
       </td>
     </ng-container>
 
+    <!-- Viewed Column -->
+    <ng-container matColumnDef="watchlist">
+      <th mat-header-cell *matHeaderCellDef> Watchlist </th>
+      <td mat-cell *matCellDef="let movie">
+        <mat-checkbox [(ngModel)]="movie.watchlist" (change)="toggleWatchlist(movie)"></mat-checkbox>
+      </td>
+    </ng-container>
+
+    <!-- Viewed Column -->
+    <ng-container matColumnDef="saveChanges">
+      <th mat-header-cell *matHeaderCellDef> Save? </th>
+      <td mat-cell *matCellDef="let movie">
+        <form (ngSubmit)="saveMovie(movie)">
+          <button mat-raised-button color="primary" type="submit">X</button>
+        </form>
+      </td>
+    </ng-container>
+
     <!-- New Movie Input Row -->
     <ng-container matColumnDef="newMovie">
       <td mat-footer-cell *matFooterCellDef colspan="4">
@@ -46,7 +64,7 @@
 
     <!-- Row definitions -->
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'highlighted': row.id === selectedMovieId, 'clickable': true, 'blurred': (selectedMovieId !== null && row.id !== selectedMovieId)}" (click)="selectMovie(row)"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'highlighted': row.id === selectedMovieId, 'blurred': (selectedMovieId !== null && row.id !== selectedMovieId)}"></tr>
     <tr mat-footer-row *matFooterRowDef="['newMovie']"></tr>
   </table>
   <mat-divider>

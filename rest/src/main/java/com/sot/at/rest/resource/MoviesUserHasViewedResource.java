@@ -3,6 +3,7 @@ package com.sot.at.rest.resource;
 import com.sot.at.rest.dom.AuthUser;
 import com.sot.at.rest.dom.Movie;
 import com.sot.at.rest.dom.MoviesUserHasViewed;
+import com.sot.at.rest.dto.AddViewedMovieDto;
 import com.sot.at.rest.dto.MoviesUserHasViewedDto;
 import com.sot.at.rest.mapper.MoviesUserHasViewedMapper;
 import jakarta.inject.Inject;
@@ -10,7 +11,6 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
-import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.core.Response;
 
 import java.util.List;
@@ -32,15 +32,16 @@ public class MoviesUserHasViewedResource {
     }
 
     @PUT
-    @Path("{userId}/{movieId}")
     @Transactional
-    public Response addViewedMovie(@PathParam("userId") Long userId, @PathParam("movieId") Long movieId) {
-        AuthUser authUser = AuthUser.findById(userId);
-        Movie movie = Movie.findById(movieId);
+    public Response addViewedMovie(AddViewedMovieDto addViewedMovieDto) {
+        AuthUser authUser = AuthUser.findById(addViewedMovieDto.getActorId());
+        Movie movie = Movie.findById(addViewedMovieDto.getMovieId());
 
         MoviesUserHasViewed moviesUserHasViewed = new MoviesUserHasViewed();
         moviesUserHasViewed.setAuthUser(authUser);
         moviesUserHasViewed.setMovie(movie);
+        moviesUserHasViewed.setWatchList(addViewedMovieDto.isWatchlist());
+        moviesUserHasViewed.setViewed(addViewedMovieDto.isViewed());
         moviesUserHasViewed.persist();
 
         return Response.ok().build();

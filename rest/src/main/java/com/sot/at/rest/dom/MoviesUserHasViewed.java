@@ -25,4 +25,8 @@ public class MoviesUserHasViewed extends PanacheEntityBase {
     @ManyToOne
     @JoinColumn(name = "movie_id", nullable = false)
     private Movie movie;
+
+    private boolean viewed;
+
+    private boolean watchList;
 }

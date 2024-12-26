@@ -5,27 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958f88c9-6705-47fb-9970-03e9c920858e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/ui/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpClient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/MoviesUserHasViewed.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dom/MoviesUserHasViewed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/MoviesUserHasViewedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/MoviesUserHasViewedDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/ActorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/AppUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/repo/MovieRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MoviesUserHasViewedResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MoviesUserHasViewedResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/service/actors.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/service/actors.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/service/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/model/authUser.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/model/authUser.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/model/movie.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/model/movie.interface.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

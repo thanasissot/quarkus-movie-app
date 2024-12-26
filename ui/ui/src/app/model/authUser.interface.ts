@@ -7,4 +7,6 @@ export interface AuthUser {
 export interface ViewedMovies {
   id: number;
   movieId: number;
+  viewed: boolean;
+  watchlist: boolean;
 }
