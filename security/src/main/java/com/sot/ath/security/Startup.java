@@ -14,7 +14,7 @@ import jakarta.transaction.Transactional;
 
 import java.util.HashSet;
 
-import static com.sot.ath.security.dom.AuthRole.RoleType.*;
+import static com.sot.ath.security.dom.AuthRole.RoleName.*;
 
 @Singleton
 public class Startup {
@@ -44,15 +44,15 @@ public class Startup {
 
         // reset and load all test users
         AuthRole authRoleSuperAdmin = new AuthRole();
-        authRoleSuperAdmin.setRoleType(SUPERADMIN);
+        authRoleSuperAdmin.setRoleName(SUPERADMIN);
         authRepository.createAuthRole(authRoleSuperAdmin);
 
         AuthRole authRoleAdmin = new AuthRole();
-        authRoleAdmin.setRoleType(ADMIN);
+        authRoleAdmin.setRoleName(ADMIN);
         authRepository.createAuthRole(authRoleAdmin);
 
         AuthRole authRoleUser = new AuthRole();
-        authRoleUser.setRoleType(USER);
+        authRoleUser.setRoleName(USER);
         authRepository.createAuthRole(authRoleUser);
 
         HashSet<AuthRole> authRolesSuperAdmin = new HashSet<>();

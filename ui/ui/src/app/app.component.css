@@ -1,0 +1,24 @@
+.sidenav-container {
+  height: 100%;
+  display: flex;
+}
+
+mat-sidenav {
+  width: 200px;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.content {
+  padding: 21px;
+}
+
+/* Active link styling */
+.active-link {
+  font-weight: bold;
+  color: #1976d2; /* Mat toolbar primary color */
+}

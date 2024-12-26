@@ -7,10 +7,7 @@ import com.sot.at.rest.repo.AppUserRepository;
 import jakarta.annotation.security.PermitAll;
 import jakarta.annotation.security.RolesAllowed;
 import jakarta.inject.Inject;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.PathParam;
-import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
@@ -41,10 +38,9 @@ public class AuthUserResource {
                 .collect(Collectors.toList());
     }
 
-    @GET
-    @Path("{id}")
-    public AuthUserDto getAuthUserById(@PathParam("id") Long id) {
-        AuthUser authUser = AuthUser.findById(id);
+    @POST
+    public AuthUserDto getAuthUserByUserName(AuthUserDto authUserDto) {
+        AuthUser authUser = AuthUser.find("username", authUserDto.getUsername()).firstResult();
         return authUserMapper.toDTO(authUser);
     }
 

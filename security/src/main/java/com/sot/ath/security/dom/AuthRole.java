@@ -11,9 +11,9 @@ public class AuthRole {
     private Long authRoleId;
 
     @Enumerated(EnumType.STRING)
-    private RoleType roleType;
+    private RoleName roleName;
 
-    public enum RoleType {
+    public enum RoleName {
         ADMIN, USER, SUPERADMIN
     }
 

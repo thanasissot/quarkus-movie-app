@@ -5,13 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958f88c9-6705-47fb-9970-03e9c920858e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpClient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/MoviesUserHasViewedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/dto/MoviesUserHasViewedDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/AuthUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/AuthUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/MoviesUserHasViewedMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/mapper/MoviesUserHasViewedMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MoviesUserHasViewedResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MoviesUserHasViewedResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/dom/AuthRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/dom/AuthRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/resource/AuthResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/resource/AuthResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/tsconfig.spec.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +94,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "temurin-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Athanasios/IdeaProjects/sockshopsql",
+    "last_opened_file_path": "C:/Users/Athanasios/IdeaProjects/parent-security/ui/ui/src/app/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,16 +107,20 @@
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "C:\\Users\\Athanasios\\IdeaProjects\\parent\\frontend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\Athanasios\\IdeaProjects\\parent-security\\frontend2\\frontend2\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Athanasios\IdeaProjects\parent-security\ui\ui\src\app\model" />
+      <recent name="C:\Users\Athanasios\IdeaProjects\parent-security\security\src\main\resources" />
+      <recent name="C:\Users\Athanasios\IdeaProjects\parent-security\ui\src\app\pages\login" />
       <recent name="C:\Users\Athanasios\IdeaProjects\parent\security\src\main\resources" />
       <recent name="C:\Users\Athanasios\IdeaProjects\parent\security\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Athanasios\IdeaProjects\parent-security\ui\src\app\pages" />
       <recent name="C:\Users\Athanasios\IdeaProjects\parent-security" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -282,6 +316,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ui" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="ui" />
+      <QsMavenRunConfiguration>
+        <MavenSettings>
+          <option name="myGeneralSettings" />
+          <option name="myRunnerSettings" />
+          <option name="myRunnerParameters">
+            <MavenRunnerParameters>
+              <option name="cmdOptions" />
+              <option name="profiles">
+                <set />
+              </option>
+              <option name="goals">
+                <list>
+                  <option value="quarkus:dev" />
+                </list>
+              </option>
+              <option name="multimoduleDir" />
+              <option name="pomFileName" value="pom.xml" />
+              <option name="profilesMap">
+                <map />
+              </option>
+              <option name="projectsCmdOptionValues">
+                <list />
+              </option>
+              <option name="resolveToWorkspace" value="false" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/ui" />
+            </MavenRunnerParameters>
+          </option>
+        </MavenSettings>
+        <targetMavenLocalRepo />
+        <emulateTerminal>false</emulateTerminal>
+        <profile>dev</profile>
+      </QsMavenRunConfiguration>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -341,6 +413,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="Angular CLI Server (untitled)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/untitled/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.GenerateToken" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
@@ -348,7 +430,9 @@
       <item itemvalue="Docker.docker.postgres: Compose Deployment" />
       <item itemvalue="Docker.docker: Compose Deployment" />
       <item itemvalue="JavaScript Debug.Angular Application (frontend)" />
+      <item itemvalue="npm.Angular CLI Server (untitled)" />
       <item itemvalue="npm.Angular CLI Server (frontend)" />
+      <item itemvalue="Quarkus.ui" />
       <item itemvalue="Quarkus.parent" />
       <item itemvalue="Quarkus.rest" />
       <item itemvalue="Quarkus.security" />
@@ -416,8 +500,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="22" />
+          <line>82</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

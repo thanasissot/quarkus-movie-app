@@ -5,12 +5,11 @@ import com.sot.at.rest.dom.Movie;
 import com.sot.at.rest.dto.MovieAssignActorsDto;
 import com.sot.at.rest.dto.MovieDto;
 import com.sot.at.rest.mapper.MovieMapper;
+import io.quarkus.panache.common.Page;
+import io.quarkus.panache.common.Sort;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.PUT;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
 
 import java.util.List;
@@ -24,9 +23,13 @@ public class MovieResource {
     MovieMapper movieMapper;
 
     @GET
-    @Path("all")
-    public List<MovieDto> getAllMovies() {
-        List<Movie> movies = Movie.findAll().list();
+    public List<MovieDto> getAllMovies(@QueryParam("page") @DefaultValue("0") int page,
+                                       @QueryParam("size") @DefaultValue("10") int size,
+                                       @QueryParam("sortDir") @DefaultValue("ASC") String sortDir,
+                                       @QueryParam("sortField") @DefaultValue("title") String sortField) {
+        List<Movie> movies = Movie
+                .findAll(Sort.by(sortField).direction(sortDir.equals("ASC") ? Sort.Direction.Ascending : Sort.Direction.Descending))
+                .page(Page.of(page, size)).list();
         return movies.stream()
                 .map(movieMapper::toDTO)
                 .collect(Collectors.toList());
@@ -61,11 +64,24 @@ public class MovieResource {
     }
 
     @GET
-    @Path("actor/{actorId}")
-    public List<Movie> getAllMoviesByActorId(@PathParam("actorId") long actorId) {
+    @Path("by-actor/{actorId}")
+    public List<MovieDto> getAllMoviesByActorId(@PathParam("actorId") long actorId) {
         List<Movie> movies = Movie
                 .find("SELECT a FROM Movie a JOIN a.actors m where m.id = ?1", actorId)
                 .list();
-        return movies;
+        return movies.stream()
+                .map(movieMapper::toDTO)
+                .collect(Collectors.toList());
+    }
+
+    @GET
+    @Path("available-for/{actorId}")
+    public List<MovieDto> getAllAvailableMovies(@PathParam("actorId") long actorId) {
+        List<Movie> movies = Movie
+                .find("SELECT a FROM Movie a WHERE a.id NOT IN (SELECT ma.id FROM Actor m JOIN m.movies ma WHERE m.id = ?1)", actorId)
+                .list();
+        return movies.stream()
+                .map(movieMapper::toDTO)
+                .collect(Collectors.toList());
     }
 }

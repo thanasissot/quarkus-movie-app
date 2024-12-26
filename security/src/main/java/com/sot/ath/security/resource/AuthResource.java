@@ -27,7 +27,7 @@ public class AuthResource {
     UserRepository userRepository;
 
     @POST
-    @Path("/signin")
+    @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response signIn(UserCredentials credentials) {
@@ -37,7 +37,7 @@ public class AuthResource {
         }
 
         String roles = authUser.getAuthRoles().stream()
-                .map(role -> role.getRoleType().name())
+                .map(role -> role.getRoleName().name())
                 .collect(Collectors.joining(","));
         String token = Jwt.issuer("https://example.com")
                 .expiresIn(Duration.ofSeconds(60))
@@ -47,7 +47,7 @@ public class AuthResource {
                 .sign();
 
         return Response.ok(new TokenResponse(token, authUser.getAuthRoles().stream()
-                .map(role -> role.getRoleType().name())
+                .map(role -> role.getRoleName().name())
                 .collect(Collectors.toSet()))).build();
     }
 

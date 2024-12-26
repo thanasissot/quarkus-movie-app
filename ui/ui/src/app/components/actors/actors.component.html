@@ -1,0 +1,78 @@
+<div class="actors-table" [class.blurred]="selectedActorId">
+  <table mat-table [dataSource]="actors" class="mat-elevation-z8">
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let actor"> {{actor.id}} </td>
+    </ng-container>
+
+    <!-- Full Name Column -->
+    <ng-container matColumnDef="fullName">
+      <th mat-header-cell *matHeaderCellDef> Full Name </th>
+      <td mat-cell *matCellDef="let actor"> {{actor.firstName}} {{actor.lastName}} </td>
+    </ng-container>
+
+    <!-- New Actor Input Row -->
+    <ng-container matColumnDef="newActor">
+      <td mat-footer-cell *matFooterCellDef colspan="2">
+        <form (ngSubmit)="addActor()">
+          <mat-form-field appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput [(ngModel)]="newActor.firstName" name="firstName" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput [(ngModel)]="newActor.lastName" name="lastName" required>
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Add Actor</button>
+        </form>
+      </td>
+    </ng-container>
+
+    <!-- Row definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'highlighted': row.id === selectedActorId}" (click)="selectActor(row)"></tr>
+    <tr mat-footer-row *matFooterRowDef="['newActor']"></tr>
+  </table>
+</div>
+
+<div *ngIf="selectedActorId" class="movies-section">
+  <h2>Movies the Actor Played In</h2>
+  <button mat-raised-button color="warn" (click)="closeMovies()">Close</button>
+  <table mat-table [dataSource]="movies" class="mat-elevation-z8">
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef> Title </th>
+      <td mat-cell *matCellDef="let movie"> {{movie.title}} </td>
+    </ng-container>
+
+    <!-- Release Year Column -->
+    <ng-container matColumnDef="releaseYear">
+      <th mat-header-cell *matHeaderCellDef> Release Year </th>
+      <td mat-cell *matCellDef="let movie"> {{movie.releaseYear}} </td>
+    </ng-container>
+
+    <!-- New Movie Input Row -->
+    <ng-container matColumnDef="newMovie">
+      <td mat-footer-cell *matFooterCellDef colspan="2">
+        <form (ngSubmit)="addMovie()">
+          <mat-form-field appearance="fill">
+            <mat-label>Movie</mat-label>
+            <mat-select [(ngModel)]="newMovieId" name="movieId" required>
+              <mat-option *ngFor="let availableMovie of availableMovies" [value]="availableMovie.id">
+                {{availableMovie.title}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Add Movie</button>
+        </form>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['title', 'releaseYear']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['title', 'releaseYear'];"></tr>
+    <tr mat-footer-row *matFooterRowDef="['newMovie']"></tr>
+  </table>
+</div>
