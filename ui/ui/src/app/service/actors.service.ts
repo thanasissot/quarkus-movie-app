@@ -29,7 +29,7 @@ export class ActorsService {
   }
 
   addMovieToActor(actorId: number, movieId: number): Observable<any> {
-    return this.http.post(`${this.MOVIES_URL}/${actorId}/movies/assign/actors`, { movieId, "actorIds": [actorId] });
+    return this.http.put(`${this.MOVIES_URL}/movies/assign/actors`, { movieId, "actorIds": [actorId] });
   }
 
 }

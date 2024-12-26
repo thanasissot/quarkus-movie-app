@@ -7,7 +7,7 @@ import { Actor } from 'src/app/model/actor.interface';
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.css']
+  styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent {
   displayedColumns: string[] = ['id', 'title', 'releaseYear', 'viewed'];

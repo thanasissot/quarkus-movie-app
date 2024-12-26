@@ -39,7 +39,7 @@
 
 <div *ngIf="selectedActorId" class="movies-section">
   <h2>Movies the Actor Played In</h2>
-  <button mat-raised-button color="warn" (click)="closeMovies()">Close</button>
+  <button mat-raised-button color="primary" (click)="closeMovies()">Close</button>
   <table mat-table [dataSource]="movies" class="mat-elevation-z8">
 
     <!-- Title Column -->

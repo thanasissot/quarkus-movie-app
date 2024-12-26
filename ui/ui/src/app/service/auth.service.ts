@@ -4,6 +4,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable, switchMap, tap} from "rxjs";
 import {UserService} from "./user.service";
 import {AuthUser} from "../model/authUser.interface";
+import {Router} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,11 @@ export class AuthService {
   private jwtHelper = new JwtHelperService();
 
   constructor(private http: HttpClient,
-              private userService: UserService,) { }
+              private userService: UserService,
+              private router: Router
+  ) {
+
+  }
 
   login(credentials: any): Observable<any> {
     return this.http.post<any>(`${this.AUTH_API_URL}/login`, credentials)
@@ -33,6 +38,7 @@ export class AuthService {
 
   logout(): void {
     localStorage.clear();
+    this.router.navigate(['/login']);
   }
 
   isAuthenticated(): boolean {

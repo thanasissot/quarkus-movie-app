@@ -21,7 +21,7 @@ export class LoginComponent {
     this.authService.login(credentials).subscribe(
       {
         next: (next: any) => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/movies']);
         },
         error: err => {
           console.error('Login failed', err);

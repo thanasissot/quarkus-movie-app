@@ -5,43 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958f88c9-6705-47fb-9970-03e9c920858e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/ui/src/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpClient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/AuthUserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MoviesUserHasViewedResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MoviesUserHasViewedResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/Startup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/dom/AuthRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/dom/AuthRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/resource/AuthResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/sot/ath/security/resource/AuthResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/actors/actors.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/components/movies/movies.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/service/actors.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/service/actors.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/app/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui/src/app/service/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui/src/styles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -497,26 +481,6 @@
           <url>jar://$MAVEN_REPOSITORY$/io/smallrye/smallrye-jwt-build/4.6.1/smallrye-jwt-build-4.6.1.jar!/io/smallrye/jwt/build/impl/JwtClaimsBuilderImpl.class</url>
           <line>208</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/ActorResource.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/sot/at/rest/resource/MovieResource.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

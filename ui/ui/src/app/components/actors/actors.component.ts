@@ -6,7 +6,7 @@ import {Movie} from "../../model/movie.interface";
 @Component({
   selector: 'app-actors',
   templateUrl: './actors.component.html',
-  styleUrls: ['./actors.component.css']
+  styleUrls: ['./actors.component.scss']
 })
 export class ActorsComponent {
   displayedColumns: string[] = ['id', 'fullName'];

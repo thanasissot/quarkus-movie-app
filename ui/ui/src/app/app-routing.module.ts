@@ -7,10 +7,10 @@ import {MoviesComponent} from "./components/movies/movies.component";
 import {ActorsComponent} from "./components/actors/actors.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/movies', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
   { path: 'movies', component: MoviesComponent, canActivate: [authGuard] },
-  { path: 'actors', component: ActorsComponent, canActivate: [authGuard] }
+  { path: 'actors', component: ActorsComponent, canActivate: [authGuard] },
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
 
 ];
 

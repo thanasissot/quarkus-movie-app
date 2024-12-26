@@ -1,0 +1,67 @@
+$primary-color: #3f51b5; // Indigo
+$accent-color: #e91e63;  // Pink
+$warn-color: #f44336;    // Red
+$background-color: #fafafa; // Light grey
+$text-primary-color: rgba(0, 0, 0, 0.87); // Primary text color
+
+.sidenav-container {
+  height: 100%;
+  display: flex;
+}
+
+.flex-child {
+  flex: 1 !important;
+  width: 7%;
+}
+
+mat-sidenav-content.flex-child {
+  flex: 9 !important;
+  width: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+  background-color: $background-color;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $primary-color;
+  color: $text-primary-color;
+}
+
+.content {
+  display: flex; justify-content:center; align-items:center;
+}
+
+mat-nav-list {
+  font-size: 1.2em; // Increase font size
+}
+
+h3 {
+  margin: 0;
+}
+
+.active-link {
+  font-weight: bold;
+  color: $accent-color;
+}
+
+.mat-list-item {
+  padding: 15px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($primary-color, 40%);
+  }
+}
+
+.mat-row {
+  border-bottom: 1px solid #ccc;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
